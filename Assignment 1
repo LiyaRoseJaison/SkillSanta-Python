@@ -1,0 +1,55 @@
+# ---------------------------------------- Q1. Python program to find the largest in a liat
+#Consider list 'data'
+data= [15, 6, 16, 13, 0]
+print("Let data = ", data)
+
+#sorting data in ascending order
+data.sort()
+#output: [0, 6, 13, 15, 16]
+
+#the largest number is the last element in the list after sorting
+print("Ans1: The largest element in the list 'data' is ", data[-1])
+#output of data[-1] = 16
+
+
+# ---------------------------------------- Q2. Python program to find the second largest in a list
+#considering the same data (as continuation)
+
+#printing the second largest element
+print("Ans2: The second largest element in the list 'data' is ", data[-2])
+#output of data[-2] = 13
+
+
+# ---------------------------------------- Q3. Python program to merge 2 lists and sort it
+#Consider 2 lists data1 and data2
+data1= [9, 6, 0, 11]
+data2= [5, 3, 8, 1]
+print("\nLet data1= ", data1, "and data2= ", data2)
+
+#merging data1 and data2 into data1
+data1.extend(data2)
+#output: data1 = [9, 6, 0, 11, 5, 3, 8, 1]
+
+#sorting data1 in ascending order
+data1.sort()
+
+#printing the sorted list "data1"
+print("Ans3: The 2 lists, 'data1' and 'data2', merged and sorted is ",data1)
+#output of data1 = [0, 1, 3, 5, 6, 8, 9, 11]
+
+
+# ---------------------------------------- Q4. Python program to swap the first and last value in a list
+#consider a list "data3"
+data3= [1, 3, 4, 6, 7, 9]
+print("\nLet data3= ",data3)
+
+#creating a temporary copy of data3 in temp
+temp= data3.copy()
+
+#swapping the values with the use of temp
+data3[-1]=temp[0]
+data3[0]=temp[-1]
+
+#printing the swapped list
+print("Ans4: The list, 'data3' after swapping the first and last values be ", data3)
+#output of data3 = [9, 3, 4, 6, 7, 1]
