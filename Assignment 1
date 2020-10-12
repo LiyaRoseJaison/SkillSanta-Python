@@ -17,7 +17,7 @@ print("Ans1: The largest element in the list 'data' is ", data[-1])
 
 #printing the second largest element
 print("Ans2: The second largest element in the list 'data' is ", data[-2])
-#output of data[-2] = 13
+#output of data[-2] = 15
 
 
 # ---------------------------------------- Q3. Python program to merge 2 lists and sort it
